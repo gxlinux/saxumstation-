@@ -1,6 +1,6 @@
 {
   "publicidad": [
-    { "titulo": "Ad 1", "archivo": "publicidad/ad1.mp3" },
-    { "titulo": "Ad 2", "archivo": "publicidad/ad2.mp3" }
+    { "titulo": "amor al aire", "archivo": "publicidad/Amor en el Aire.mp3" },
+    { "titulo": "natio", "archivo": "publicidad/natio.mp3" }
   ]
 }
