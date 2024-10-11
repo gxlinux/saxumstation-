@@ -29,17 +29,7 @@ audio {
   display: block;
 }
 
-button {
-  background-color: #ff00ff;
-  color: #0d0d0d;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #00ff99;
+#nowPlaying {
+  font-size: 1.5em;
+  color: #ff00ff;
 }
