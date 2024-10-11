@@ -22,7 +22,8 @@
   <script>
     let musicaIndex = 0;
     let publicidadIndex = 0;
-    let isPlayingMusic = true; // Alternar entre música y publicidad
+    let songCount = 0; // Contador de canciones reproducidas
+    const cancionesPorPublicidad = 3; // Número de canciones antes de un anuncio
     let musicaData = [];
     let publicidadData = [];
 
@@ -44,7 +45,7 @@
       .catch(error => console.error('Error al cargar los archivos JSON:', error));
 
     function iniciarReproduccion() {
-      if (isPlayingMusic) {
+      if (songCount < cancionesPorPublicidad) {
         reproducirMusica();
       } else {
         reproducirPublicidad();
@@ -58,10 +59,10 @@
         nowPlaying.textContent = `Música: ${cancion.titulo}`;
         audioPlayer.play();
         musicaIndex++;
-        isPlayingMusic = false; // Alternar a publicidad después
+        songCount++; // Aumentar el contador de canciones
       } else {
         musicaIndex = 0; // Reiniciar lista de música
-        reproducirMusica();
+        reproducirMusica(); // Reiniciar si se acabaron las canciones
       }
     }
 
@@ -72,10 +73,10 @@
         nowPlaying.textContent = `Publicidad: ${anuncio.titulo}`;
         audioPlayer.play();
         publicidadIndex++;
-        isPlayingMusic = true; // Alternar a música después
+        songCount = 0; // Reiniciar el contador de canciones después de un anuncio
       } else {
         publicidadIndex = 0; // Reiniciar lista de publicidad
-        reproducirPublicidad();
+        reproducirPublicidad(); // Reiniciar si se acabaron los anuncios
       }
     }
 
