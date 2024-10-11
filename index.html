@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saxum Station - Tu emisora de rock ciberpunk con la mejor música y anuncios únicos.">
+  <meta name="keywords" content="Saxum Station, Rock, Ciberpunk, Música, Publicidad, Emisora de rock">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Saxum Station - Rock </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Saxum Station </h1>
+  </header>
+
+  <section id="player">
+    <h2>Rock Music</h2>
+    <audio id="audioPlayer" controls></audio>
+    <button onclick="cargarMusica()">Cargar Música</button>
+    <button onclick="cargarPublicidad()">Cargar Publicidad</button>
+  </section>
+
+  <script>
+    function cargarMusica() {
+      fetch('musica.json')
+        .then(response => response.json())
+        .then(data => {
+          let audioPlayer = document.getElementById('audioPlayer');
+          let cancion = data.musica[0]; // Carga la primera canción
+          audioPlayer.src = cancion.archivo;
+          audioPlayer.play();
+        })
+        .catch(error => console.error('Error al cargar la música:', error));
+    }
+
+    function cargarPublicidad() {
+      fetch('publicidad.json')
+        .then(response => response.json())
+        .then(data => {
+          let audioPlayer = document.getElementById('audioPlayer');
+          let anuncio = data.publicidad[0]; // Carga el primer anuncio
+          audioPlayer.src = anuncio.archivo;
+          audioPlayer.play();
+        })
+        .catch(error => console.error('Error al cargar la publicidad:', error));
+    }
+  </script>
+</body>
+</html>
