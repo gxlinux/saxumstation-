@@ -1,8 +1,8 @@
 /* Estilo ciberpunk para Saxum Station */
 body {
-  background-color: #0d0d0d;
-  color: #00ff99;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #00ff99; /* Color de texto */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
   margin: 0;
   padding: 20px;
 }
@@ -10,26 +10,60 @@ body {
 header {
   text-align: center;
   padding: 10px;
-  border-bottom: 2px solid #ff00ff;
+  border-bottom: 2px solid #ff00ff; /* Borde inferior brillante */
 }
 
 h1 {
   font-size: 2.5em;
-  color: #ff00ff;
+  color: #ff00ff; /* Título colorido */
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Sombra de texto */
 }
 
 #player {
   text-align: center;
   margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px; /* Bordes redondeados */
+  background: linear-gradient(145deg, #2b2b2b, #1e1e1e); /* Degradado para el contenedor */
+  box-shadow: 8px 8px 20px #000, -8px -8px 20px #ff00ff; /* Sombra del contenedor */
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #ff00ff; /* Color de la sección de reproducción */
 }
 
 audio {
-  width: 80%;
+  width: 80%; /* Ancho del reproductor */
   margin: 20px auto;
   display: block;
+  border: 2px solid #00ff99; /* Borde del reproductor */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #2b2b2b; /* Fondo del reproductor */
+  outline: none; /* Sin contorno */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #2b2b2b; /* Fondo de los controles */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #ff00ff; /* Color del botón de play */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: #00ff99; /* Cambio de color al pasar el ratón */
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #ff00ff; /* Color del control de volumen */
 }
 
 #nowPlaying {
   font-size: 1.5em;
-  color: #ff00ff;
+  color: #ff00ff; /* Color del título que muestra la canción o publicidad */
+  text-shadow: 0 0 5px #00ff99; /* Sombra de texto */
 }
