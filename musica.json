@@ -1,9 +1,12 @@
 {
   "musica": [
     { "titulo": "saxum station rock", "archivo": "musica/Saxum Station Rock.mp3" },
-    { "titulo": "saxum station rock", "archivo": "musica/El Señor Lobo.mp3" },
-    { "titulo": "saxum station rock", "archivo": "musica/Saxum Station Rock.mp3" },
-    { "titulo": "saxum station rock", "archivo": "musica/Saxum Station Rock.mp3" },
+    { "titulo": "señor lobo", "archivo": "musica/El Señor Lobo.mp3" },
+    { "titulo": "Haz Lo Que Te Dé La Gana", "archivo": "musica/Haz Lo Que Te Dé La Gana.mp3" },
+    { "titulo": "Mortal", "archivo": "musica/Mortal.mp3" },
+    { "titulo": "no eres punk", "archivo": "musica/No Eres Punk.mp3" },
+    { "titulo": "personalidad de perro", "archivo": "musica/Personalidad de Perro.mp3" },
+    { "titulo": "slencios incomodos", "archivo": "musica/Silencios Incómodos.mp3" },
     { "titulo": "roca vibrante", "archivo": "musica/Roca Vibrante.mp3" }
   ]
 }
