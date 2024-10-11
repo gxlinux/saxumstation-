@@ -67,3 +67,7 @@ audio::-webkit-media-controls-volume-slider {
   color: #ff00ff; /* Color del título que muestra la canción o publicidad */
   text-shadow: 0 0 5px #00ff99; /* Sombra de texto */
 }
+section {
+  overflow: hidden;
+  height: 100px;
+}
