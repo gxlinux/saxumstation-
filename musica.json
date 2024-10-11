@@ -1,0 +1,6 @@
+{
+  "musica": [
+    { "titulo": "Rock Song 1", "archivo": "musica/rock1.mp3" },
+    { "titulo": "Rock Song 2", "archivo": "musica/rock2.mp3" }
+  ]
+}
