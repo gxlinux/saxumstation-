@@ -6,45 +6,81 @@
   <meta name="description" content="Saxum Station - Tu emisora de rock ciberpunk con la mejor música y anuncios únicos.">
   <meta name="keywords" content="Saxum Station, Rock, Ciberpunk, Música, Publicidad, Emisora de rock">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Saxum Station - Rock </title>
+  <title>Saxum Station - Rock Ciberpunk</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Saxum Station </h1>
+    <h1>Saxum Station - Rock Ciberpunk</h1>
   </header>
 
   <section id="player">
-    <h2>Rock Music</h2>
+    <h2>Reproduciendo: <span id="nowPlaying">Cargando...</span></h2>
     <audio id="audioPlayer" controls></audio>
-    <button onclick="cargarMusica()">Cargar Música</button>
-    <button onclick="cargarPublicidad()">Cargar Publicidad</button>
   </section>
 
   <script>
-    function cargarMusica() {
-      fetch('musica.json')
-        .then(response => response.json())
-        .then(data => {
-          let audioPlayer = document.getElementById('audioPlayer');
-          let cancion = data.musica[0]; // Carga la primera canción
-          audioPlayer.src = cancion.archivo;
-          audioPlayer.play();
-        })
-        .catch(error => console.error('Error al cargar la música:', error));
+    let musicaIndex = 0;
+    let publicidadIndex = 0;
+    let isPlayingMusic = true; // Alternar entre música y publicidad
+    let musicaData = [];
+    let publicidadData = [];
+
+    const audioPlayer = document.getElementById('audioPlayer');
+    const nowPlaying = document.getElementById('nowPlaying');
+
+    // Cargar música y publicidad
+    fetch('musica.json')
+      .then(response => response.json())
+      .then(data => {
+        musicaData = data.musica;
+        return fetch('publicidad.json');
+      })
+      .then(response => response.json())
+      .then(data => {
+        publicidadData = data.publicidad;
+        iniciarReproduccion(); // Iniciar la reproducción
+      })
+      .catch(error => console.error('Error al cargar los archivos JSON:', error));
+
+    function iniciarReproduccion() {
+      if (isPlayingMusic) {
+        reproducirMusica();
+      } else {
+        reproducirPublicidad();
+      }
     }
 
-    function cargarPublicidad() {
-      fetch('publicidad.json')
-        .then(response => response.json())
-        .then(data => {
-          let audioPlayer = document.getElementById('audioPlayer');
-          let anuncio = data.publicidad[0]; // Carga el primer anuncio
-          audioPlayer.src = anuncio.archivo;
-          audioPlayer.play();
-        })
-        .catch(error => console.error('Error al cargar la publicidad:', error));
+    function reproducirMusica() {
+      if (musicaIndex < musicaData.length) {
+        let cancion = musicaData[musicaIndex];
+        audioPlayer.src = cancion.archivo;
+        nowPlaying.textContent = `Música: ${cancion.titulo}`;
+        audioPlayer.play();
+        musicaIndex++;
+        isPlayingMusic = false; // Alternar a publicidad después
+      } else {
+        musicaIndex = 0; // Reiniciar lista de música
+        reproducirMusica();
+      }
     }
+
+    function reproducirPublicidad() {
+      if (publicidadIndex < publicidadData.length) {
+        let anuncio = publicidadData[publicidadIndex];
+        audioPlayer.src = anuncio.archivo;
+        nowPlaying.textContent = `Publicidad: ${anuncio.titulo}`;
+        audioPlayer.play();
+        publicidadIndex++;
+        isPlayingMusic = true; // Alternar a música después
+      } else {
+        publicidadIndex = 0; // Reiniciar lista de publicidad
+        reproducirPublicidad();
+      }
+    }
+
+    // Escuchar cuando la canción o anuncio termina y alternar
+    audioPlayer.addEventListener('ended', iniciarReproduccion);
   </script>
 </body>
 </html>
