@@ -1,6 +1,16 @@
 {
   "publicidad": [
     { "titulo": "saxum station", "archivo": "publicidad/saxum.mp3" },
+    { "titulo": "Coca Cola e Rolling Stones 1995.mp3", "archivo": "publicidad/Comercial - Coca Cola e Rolling Stones 1995.mp3" },
+    { "titulo": "Coca cola es así!", "archivo": "publicidad/Delirios Krónikos - Coca cola es así! (128 kbps).mp3" },
+    { "titulo": "saxum station", "archivo": "publicidad/Saxum Station se esp.mp3" },
+    { "titulo": "advertise-rock", "archivo": "publicidad/commercial-advertise-rock-.mp3" },
+    { "titulo": "doom metal", "archivo": "publicidad/doom-metal-kinda-212706.mp3" },
+    { "titulo": "happy rock", "archivo": "publicidad/happy-rock.mp3" },
+    { "titulo": "me gusta el rock", "archivo": "publicidad/me gusta el rock.mp3" },
+    { "titulo": "saxum station", "archivo": "publicidad/saxum station rock music.mp3" },
+    { "titulo": "saxum station", "archivo": "publicidad/saxum.mp3" },
+    { "titulo": "saxum station", "archivo": "publicidad/saxum station rock music.mp3" },
     { "titulo": "radio por internet", "archivo": "publicidad/la emisora de radio por internet (128 kbps).mp3" }
   ]
 }
