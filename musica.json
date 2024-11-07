@@ -1,6 +1,11 @@
 {
   "musica": [
     { "titulo": "saxum station rock", "archivo": "musica/Saxum Station Rock.mp3" },
+    { "titulo": "Anthem", "archivo": "musica/Anthem.mp3" },
+    { "titulo": "Broken Mirrors", "archivo": "musica/Broken Mirrors.mp3" },
+    { "titulo": "Depths of Despair", "archivo": "musica/Depths of Despair.mp3" },
+    { "titulo": "Despair", "archivo": "musica/Despair.mp3" },
+    { "titulo": "Mirrors", "archivo": "musica/Mirrors.mp3" },
     { "titulo": "Rise Like The Sun", "archivo": "musica/Rise Like The Sun.mp3" },
     { "titulo": "Southern Alien", "archivo": "musica/Southern Alien Blues (1).mp3" },
     { "titulo": "Subconscious", "archivo": "musica/Subconscious .mp3" },
