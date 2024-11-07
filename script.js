@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const audioPlayer = document.getElementById('audioPlayer');
     let currentAudioQueue = [];
     let currentHour = new Date().getHours();
-    let currentMinute = new Date().getMinutes();
 
     async function loadJSON(url) {
         const response = await fetch(url);
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         function addMusicAndAdsToQueue() {
             const now = new Date();
             const hourAudio = audios.hours.find(hour => hour.time === now.getHours().toString().padStart(2, '0'))?.url;
-            const minuteAudio = audios.minutes.find(min => min.time === `MIN${now.getMinutes().toString().padStart(2, '0')}`)?.url;
+            const minuteAudio = audios.minutes.find(min => min.time === now.getMinutes().toString().padStart(2, '0'))?.url;
 
             if (hourAudio && minuteAudio) {
                 currentAudioQueue.push(hourAudio);
@@ -58,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        // Inicializar la cola de reproducciÃģn con la hora, los minutos, publicidad y mÃšsica
+        // Inicializar la cola de reproducciÃ³n con la hora, los minutos, publicidad y mÃºsica
         addMusicAndAdsToQueue();
         playNextAudio();
 
-        // Mantener la cola de reproducciÃģn
+        // Mantener la cola de reproducciÃ³n
         audioPlayer.addEventListener('ended', () => {
             if (currentAudioQueue.length === 0) {
                 addMusicAndAdsToQueue();
@@ -74,18 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const nextHour = new Date().getHours();
             const nextMinute = new Date().getMinutes();
 
-            if (nextHour !== currentHour || nextMinute !== currentMinute) {
+            if (nextHour !== currentHour) {
                 currentHour = nextHour;
-                currentMinute = nextMinute;
                 const hourAudio = audios.hours.find(hour => hour.time === currentHour.toString().padStart(2, '0'))?.url;
-                const minuteAudio = audios.minutes.find(min => min.time === `MIN${currentMinute.toString().padStart(2, '0')}`)?.url;
+                const minuteAudio = audios.minutes.find(min => min.time === nextMinute.toString().padStart(2, '0'))?.url;
 
                 if (hourAudio && minuteAudio) {
-                    currentAudioQueue.unshift(hourAudio, minuteAudio);
+                    currentAudioQueue.unshift(minuteAudio);
+                    currentAudioQueue.unshift(hourAudio);
                     playNextAudio();
                 }
             }
-        }, 60000); // Revisar cada minuto si la hora cambiÃģ
+        }, 60000); // Revisar cada minuto si la hora cambiÃ³
     }
 
     startPlayback();
