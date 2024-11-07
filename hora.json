@@ -1,0 +1,28 @@
+{
+    "hours": [
+        {"time": "00", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora00.mp3"},
+        {"time": "01", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora01.mp3"},
+        {"time": "02", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora02.mp3"},
+        {"time": "03", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora03.mp3"},
+        {"time": "04", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora04.mp3"},
+        {"time": "05", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora05.mp3"},
+        {"time": "06", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora06.mp3"},
+        {"time": "07", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora07.mp3"},
+        {"time": "08", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora08.mp3"},
+        {"time": "09", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora09.mp3"},
+        {"time": "10", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora10.mp3"},
+        {"time": "11", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora11.mp3"},
+        {"time": "12", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora12.mp3"},
+        {"time": "13", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora13.mp3"},
+        {"time": "14", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora14.mp3"},
+        {"time": "15", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora15.mp3"},
+        {"time": "16", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora16.mp3"},
+        {"time": "17", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora17.mp3"},
+        {"time": "18", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora18.mp3"},
+        {"time": "19", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora19.mp3"},
+        {"time": "20", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora20.mp3"},
+        {"time": "21", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora21.mp3"},
+        {"time": "22", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora22.mp3"},
+        {"time": "23", "url": "https://ia800507.us.archive.org/6/items/hora08/hora/hora23.mp3"}
+    ]
+}
