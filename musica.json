@@ -2,6 +2,10 @@
   "musica": [
     { "titulo": "saxum station rock", "archivo": "musica/Saxum Station Rock.mp3" },
     { "titulo": "Anthem", "archivo": "musica/Anthem.mp3" },
+    { "titulo": "Ain't Got a Nickel Ain't Got a Dime", "archivo": "musica/Ain't Got a Nickel Ain't Got a Dime.mp3" },
+    { "titulo": "Back Gold", "archivo": "musica/Back Gold.mp3" },
+    { "titulo": "Banality Loop", "archivo": "musica/Banality Loop.mp3" },
+    { "titulo": "Empty Bottles and Broken Hearts", "archivo": "musica/Empty Bottles and Broken Hearts.mp3" },
     { "titulo": "Broken Mirrors", "archivo": "musica/Broken Mirrors.mp3" },
     { "titulo": "Depths of Despair", "archivo": "musica/Depths of Despair.mp3" },
     { "titulo": "Despair", "archivo": "musica/Despair.mp3" },
