@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function loadAudios() {
-        const advertisements = await loadJSON('publicidad.json');
-        const music = await loadJSON('musica.json');
+        const advertisements = await loadJSON('public.json');
+        const music = await loadJSON('music.json');
         const hours = await loadJSON('hora.json');
         const minutes = await loadJSON('minutos.json');
         return {
