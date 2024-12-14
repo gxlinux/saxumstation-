@@ -1,6 +1,6 @@
 # Saxum Station: Rock Music
 
-**Saxum Station** Saxum Station es la emisora de radio donde el espíritu del rock vive y vibra. Desde los clásicos inmortales hasta las bandas emergentes que están redefiniendo el género, Saxum Station te ofrece un viaje sonoro cargado de energía, actitud y autenticidad. Disfruta de tus canciones favoritas en formato MP3 con una interfaz moderna y responsiva desarrollada en HTML5 y CSS3. ¡Conectémonos con el amor a través de la música!
+**Saxum Station** Saxum Station es la emisora de radio donde el espíritu del rock vive y vibra. Desde los clásicos inmortales hasta las bandas emergentes que están redefiniendo el género, Saxum Station te ofrece un viaje sonoro cargado de energía, actitud y autenticidad. Disfruta de tus canciones favoritas en formato MP3 con una interfaz moderna y responsiva desarrollada en HTML5 y CSS3. ¡Conectémonos con el energia a través de la música rock!
 
 ---
 
@@ -63,7 +63,7 @@ El archivo `musica.json` contiene información sobre las canciones disponibles e
 
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/natio-station.git
+   git clone https://github.com/tuusuario/saxum-station.git
    ```
 
 2. **Abre el archivo `index.html` en tu navegador:**
