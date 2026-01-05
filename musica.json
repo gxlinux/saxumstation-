@@ -23,6 +23,8 @@
     { "titulo": "Broken wires humming under my skin", "archivo": "musica/Broken wires humming under my skin,.mp3" },
     { "titulo": "saxum station Bogota", "archivo": "musica/saxumsationbogota.mp3" },
     { "titulo": "saxumstation", "archivo": "musica/saxumstation.mp3" },
+    { "titulo": "Soy Lyxa Rayset", "archivo": "musica/Soy Lyxa Rayset..mp3" },
+    { "titulo": "presencias", "archivo": "musica/presencias.mp3" },
     { "titulo": "Bogota murmula", "archivo": "musica/bogotamurmura.mp3" },
     { "titulo": "Rebel Soul", "archivo": "musica/Rebel Soul.mp3" },
     { "titulo": "prende la seña", "archivo": "musica/Conecto el cable, prende la señal,.mp3" },
@@ -40,6 +42,8 @@
     { "titulo": "Stone and Marble", "archivo": "musica/Stone and Marble.mp3" },
     { "titulo": "The Stone-Age Blues", "archivo": "musica/The Stone-Age Blues.mp3" },
     { "titulo": "Saxum Station Rock", "archivo": "musica/Saxum Station Rock.mp3" },
+    { "titulo": "fabian garcia", "archivo": "musica/fabiangarcia.mp3" },
+    { "titulo": "Soy", "archivo": "musica/Soy.mp3" },
     { "titulo": "Saxum Station Rock", "archivo": "musica/pleasure.mp3" },
     { "titulo": "Subconscious", "archivo": "musica/Subconscious .mp3" },
     { "titulo": "Voices in the Shadows", "archivo": "musica/Voices in the Shadows.mp3" },
@@ -66,7 +70,9 @@
     { "titulo": "Despair", "archivo": "musica/Despair.mp3" },
     { "titulo": "Mirrors", "archivo": "musica/Mirrors.mp3" },
     { "titulo": "saxumstation", "archivo": "musica/saxumstation.mp3" },
+    { "titulo": "soy rayset", "archivo": "musica/Soy Rayset.mp3" },
     { "titulo": "Rebel Soul", "archivo": "musica/Rebel Soul.mp3" },
+    { "titulo": "Soy Lyxa Rayset..mp3", "archivo": "musica/Soy Lyxa Rayset..mp3" },
     { "titulo": "Solitary Crowd", "archivo": "musica/Solitary Crowd.mp3" },
     { "titulo": "Rebel's Anthem", "archivo": "musica/Rebel's Anthem.mp3" },
     { "titulo": "Caos Vocal", "archivo": "musica/Caos Vocal.mp3" },
@@ -186,6 +192,9 @@
     { "titulo": "Electric Pulse", "archivo": "musica/Electric Pulse.mp3" },
     { "titulo": "Electro Dance Party", "archivo": "musica/Electro Dance Party.mp3" },
     { "titulo": "slencios incomodos", "archivo": "musica/Silencios Incómodos.mp3" },
+    { "titulo": "Soy Lyxa Rayset. (Cover)", "archivo": "musica/Soy Lyxa Rayset. (Cover).mp3" },
+    { "titulo": "Soy Lyxa. (Cover)", "archivo": "musica/Soy Lyxa. (Cover).mp3" },
+    { "titulo": "Soy Rayset", "archivo": "musica/Soy Rayset.mp3" },
     { "titulo": "roca vibrante", "archivo": "musica/Roca Vibrante.mp3" }
   ]
 }
